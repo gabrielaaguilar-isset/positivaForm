@@ -236,6 +236,7 @@
         const valorActualDinero = document.querySelector("#valorActualDinero");
         const errormodalCotitizarSeguro_CotizarSeguro = document.querySelector("#errorModal_CotizarSeguro");
         const closeModal = document.querySelector(".closeModalCotizarSeguro");
+        const ocultar = document.getElementsByClassName("resultadoCotizacionImg");
 
         form.addEventListener("submit", (event) => {
           event.preventDefault(); // Evitar envío del formulario para validar
@@ -306,11 +307,15 @@
         },
         {
             resultadoCotizacion: [
-                { name: "Monto", description: "Bogota D.C" },
-                { id: 2, description: "Tunja" },
-                { id: 3, description: "Médellin" },
-                { id: 4, description: "Cali" },
-                { id: 5, description: "Barranquilla" }
+                { name: "Monto", description: "900.000 Anual" },
+                { name: "Muerte por cualquier causa", description: "Tunja" },
+                { name: "Amparo de auxilio funerario", description: "Médellin" },
+                { name: "Daños Terceros", description: "Cali" },
+                { name: "Incapacidad total y permanente(Invalidez)", description: "Barranquilla" },
+                { name: "Gastos de defensa", description: "900.000 Anual" },
+                { name: "Perdida total por dano", description: "Tunja" },
+                { name: "Perdida total por hurto", description: "Médellin" },
+                { name: "Asistencia por movilidad", description: "Cali" }
             ]
         }
     ];
@@ -372,20 +377,6 @@
     loadTipoCredito();
     loadUbicacionGeografica();
 
-    // Validación del formulario
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const moto = motoSegurosDeudoresSelect.value;
-        const ocupacion = ocupacionSegurosDeudoresSelect.value;
-
-        // Validamos que ambos campos estén seleccionados
-        if (!moto || !ocupacion) {
-            document.getElementById('error-message').textContent = 'Por favor, selecciona ambos campos.';
-        } else {
-            document.getElementById('error-message').textContent = '';  // Limpiamos el mensaje de error
-            alert('Formulario enviado correctamente');
-        }
-    });
-    </script>
+  </script>
   </body>
 </html>
