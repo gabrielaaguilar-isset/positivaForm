@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.CotizadorDeu {
+  width: 100%;
+  height: 100vh;
+  background: center / cover no-repeat url("./assets/background.svg");
+  height: auto;
+  padding: 30px 120px 90px 120px;
+}
+.CotizadorDeu_button {
+  padding: 10px 12px 10px 12px;
+  gap: 5px;
+  border-radius: 5px 0px 0px 0px;
+  background: #ff7500;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 219px;
+}
+.CotizadorDeu_button_flecha {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 13px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  margin-top: -4px;
+}
+.formCotizaSeguroVida {
+  width: 45%;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-top: 29px;
+}
+.formCotizaSeguroVida_title {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+.formCotizaSeguroVida_formContainer {
+  display: flex;
+  flex-direction: column;
+}
+.formCotizaSeguroVida_inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.formCotizaSeguroVida_label {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  margin-bottom: 3px;
+}
+.formCotizaSeguroVida_input,
+.formCotizaSeguroVida_select {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  background: #fff;
+  height: 40px;
+  width: 100%;
+}
+/* Estilo del switch */
+.formCotizaSeguroVida_switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.formCotizaSeguroVida_inputCheck {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.formCotizaSeguroVida_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.formCotizaSeguroVida_slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.formCotizaSeguroVida_inputCheck:checked + .formCotizaSeguroVida_slider {
+  background-color: #ff7500;
+}
+
+.formCotizaSeguroVida_inputCheck:checked + .formCotizaSeguroVida_slider:before {
+  transform: translateX(20px);
+}
+
+/* Ocultar inicialmente los radios */
+.hiddenRadios {
+  display: none;
+}
+
+/* Estilo de los radios */
+.formCotizaSeguroVida_radioC {
+  margin: 17px 0 19px 0;
+}
+.containerRadiosE {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 14px 15px 14px 15px;
+  gap: 20px;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  margin-bottom: 19px;
+}
+.formCotizaSeguroVida_radios_label {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+
+  width: 185px;
+  //styleName: Text 3 Regular;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  text-align: left;
+}
+
+.formCotizaSeguroVida_radios_input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #dadada;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formCotizaSeguroVida_radios_input:checked {
+  background-color: #ff7500;
+  border-color: #ff7500;
+}
+
+.formCotizaSeguroVida_radios_input:hover {
+  border-color: #ff7500;
+}
+
+.formCotizaSeguroVida_input:focus,
+.formCotizaSeguroVida_select:focus {
+  outline: none;
+  border-color: #ff7500;
+}
+.containerButtonSubmit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formCotizaSeguroVida_button {
+  padding: 8px 30px 8px 30px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff7500;
+  border: none;
+  margin: auto;
+  margin-top: 25px;
+}
+.containerFormYResult {
+  display: flex;
+  gap: 50px;
+}
+.resultadoCotizacion {
+  width: 55%;
+  height: 665.61px;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-top: 29px;
+}
+.resultadoCotizacion_title {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  color: #ff6b00;
+}
+.resultadoCotizacion_bgGray {
+  height: 78px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+  height: auto;
+}
+.resultadoCotizacion_containerCosto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resultadoCotizacion_containerCosto_costo {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  width: 250px;
+}
+.resultadoCotizacion_containerCosto_total {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: right;
+}
+.resultadoCotizacion_bgGray_anual {
+  text-align: right;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+}
+.resultadoCotizacion_incluye {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  margin-top: 20px;
+}
+.resultadoCotizacionImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 316px;
+}
+.resultadoCotizacionImg_img {
+  width: 89.58px;
+  height: 59.99px;
+}
+.resultadoCotizacionImg_text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #6e6e6e;
+  max-width: 280px;
+  margin-top: 20px;
+}
+
+/**Modal*/
+/* Modal Styles */
+.cotizarSeguroModal {
+  display: none; /* Ocultar por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */
+}
+
+.modalCotitizarSeguro_content {
+  background-color: white;
+  width: 405px;
+  height: 315px;
+  padding: 30px 20px 30px 20px;
+  gap: 24px;
+  border-radius: 16px;
+  margin: 15% auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.ModalCotizarSeguroError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ModalCotizarSeguroError_title{
+
+font-family: Poppins;
+font-size: 25px;
+font-weight: 600;
+line-height: 34.5px;
+text-align: center;
+margin-top: 24px;
+}
+
+.ModalCotizarSeguroError_hr{
+  width: 60px;
+  height: 5px;
+  background: #FF8500;
+  border-radius: 5px;
+  border: none;
+  margin-top: 4px;
+  
+}
+.ModalCotizarSeguroError_p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+margin-top: 28px;
+}
+
+.closeModalCotizarSeguro {
+ display: flex; 
+ justify-content: flex-end;  
+ margin-top: -15px;
+}
+
+.ModalCotizarSeguroError_img{
+  width: 87px;
+height: 87px;
+margin-top: -15px;
+}
+.closeModalCotizarSeguro > img{
+  width: 33.33px;
+height: 33.33px;
+
+}
+.closeModalCotizarSeguro:hover,
+.closeModalCotizarSeguro:focus {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 1146px) {
+  .formCotizaSeguroVida {
+    width: 50%;
+  }
+  .resultadoCotizacion {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .CotizadorDeu {
+    padding: 30px 25px 90px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerFormYResult {
+    flex-direction: column;
+  }
+  .formCotizaSeguroVida {
+    width: 100%;
+  }
+  .resultadoCotizacion {
+    width: 100%;
+  }
+  .containerFormYResult {
+    gap: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .resultadoCotizacion_containerCosto_costo {
+    width: 138px;
+  }
+}
+
+@media (max-width: 460px) {
+  .formCotizaSeguroVida_title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .containerRadiosE {
+    height: 60px;
+  }
+}

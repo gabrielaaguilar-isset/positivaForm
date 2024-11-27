@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="CotizadorDeu">
+      <a href="/#" class="CotizadorDeu_button"
+        ><span class="CotizadorDeu_button_flecha">&#171;</span>Volver al seguro
+        deudor</a
+      >
+      <div class="containerFormYResult">
+        <div class="formCotizaSeguroVida">
+          <h2 class="formCotizaSeguroVida_title">
+            Cotiza tu seguro <span style="color: #ff7500">de vida</span>
+          </h2>
+
+          <div class="formCotizaSeguroVida_formContainer">
+            <form action="">
+              <span class="formCotizaSeguroVida_inputContainer">
+                <label for="manejaMoto" class="formCotizaSeguroVida_label"
+                  >Manejas moto*</label
+                >
+                <select
+                  name="manejaMoto"
+                  id="manejaMoto"
+                  class="formCotizaSeguroVida_select"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Selecciona una opción
+                  </option>
+
+                  <option value="motocicletaTransporte">
+                    Motocicleta transporte
+                  </option>
+                  <option value="motocicletaTransporte">
+                    Motocicleta transporte
+                  </option>
+                  <option value="motocicletaTransporte">
+                    Motocicleta transporte
+                  </option>
+                  <option value="motocicletaTransporte">
+                    Motocicleta transporte
+                  </option>
+                </select>
+              </span>
+
+              <span class="formCotizaSeguroVida_inputContainer">
+                <label for="edadPersona" class="formCotizaSeguroVida_label"
+                  >Tu edad*</label
+                >
+                <select
+                  name="edadPersona"
+                  id="edadPersona"
+                  class="formCotizaSeguroVida_select"
+                  required
+                >
+                  <!--Se llena desde js-->
+                </select>
+              </span>
+
+              <span class="formCotizaSeguroVida_inputContainer">
+                <label for="ocupacionPersona" class="formCotizaSeguroVida_label"
+                  >Ocupacion*</label
+                >
+                <select
+                  name="ocupacionPersona"
+                  id="ocupacionPersona"
+                  class="formCotizaSeguroVida_select"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Selecciona una opción
+                  </option>
+
+                  <option value="ingenieroSistema">Ingeniero</option>
+                  <option value="doctorQueCura">Doctor que cura</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </span>
+
+              <span class="formCotizaSeguroVida_inputContainer">
+                <label for="creditoPersona" class="formCotizaSeguroVida_label"
+                  >Tipo de crédito*</label
+                >
+                <select
+                  name="creditoPersona"
+                  id="creditoPersona"
+                  class="formCotizaSeguroVida_select"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Selecciona una opción
+                  </option>
+
+                  <option value="LeasingHabitalNoVisEnUVr">
+                    Leasing habitacional no vis en uvr
+                  </option>
+                  <option value="sinCredito">Sin Credito</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </span>
+
+              <div class="formCotizaSeguroVida_radioC">
+                <label class="formCotizaSeguroVida_switch">
+                  <input
+                    type="checkbox"
+                    id="showRadios"
+                    class="formCotizaSeguroVida_inputCheck"
+                  />
+                  <span class="formCotizaSeguroVida_slider"></span>
+                </label>
+                <label for="showRadios" class="formCotizaSeguroVida_label"
+                  >Incapacidad total y permanente</label
+                >
+              </div>
+
+              <div id="formCotizaSeguroVida_radios" class="hiddenRadios">
+                <label class="formCotizaSeguroVida_radios_label">
+                  <input
+                    type="radio"
+                    name="additionalOption"
+                    value="opcion1"
+                    class="formCotizaSeguroVida_radios_input"
+                  />
+                  Enfermedades graves
+                </label>
+                <label class="formCotizaSeguroVida_radios_label">
+                  <input
+                    type="radio"
+                    name="additionalOption"
+                    value="opcion2"
+                    class="formCotizaSeguroVida_radios_input"
+                  />
+                  Auxilio funerario
+                </label>
+              </div>
+
+              <span class="formCotizaSeguroVida_inputContainer">
+                <label for="Ubicacion" class="formCotizaSeguroVida_label"
+                  >Ubicación geográfica*</label
+                >
+                <select
+                  name="ocupacionPersona"
+                  id="ocupacionPersona"
+                  class="formCotizaSeguroVida_select"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Selecciona una opción
+                  </option>
+
+                  <option value="bogotadc">Bogota D.C</option>
+                  <option value="Cucuta">Cucuta</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </span>
+
+              <span class="formCotizaSeguroVida_inputContainer">
+                <label
+                  for="valorActualDinero"
+                  class="formCotizaSeguroVida_label"
+                  >Valor actual de la deuda*</label
+                >
+
+                <input
+                  type="text"
+                  id="valorActualDinero"
+                  class="formCotizaSeguroVida_input"
+                  placeholder="$"
+                  required
+                />
+              </span>
+              <div class="containerButtonSubmit">
+                <input
+                  type="submit"
+                  value="Cotizar"
+                  class="formCotizaSeguroVida_button"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="resultadoCotizacion">
+          <h2 class="resultadoCotizacion_title">
+            Resultado de <span style="color: #173748"> la cotización</span>
+          </h2>
+          <div class="resultadoCotizacion_bgGray">
+            <div class="resultadoCotizacion_containerCosto">
+              <p class="resultadoCotizacion_containerCosto_costo">
+                El costo de tu seguro es
+              </p>
+              <p class="resultadoCotizacion_containerCosto_total">-------</p>
+            </div>
+            <p class="resultadoCotizacion_bgGray_anual">______</p>
+          </div>
+          <h3 class="resultadoCotizacion_incluye">Este costo incluye:</h3>
+
+          <div class="resultadoCotizacionImg">
+            <img
+              src="./assets/pc.png"
+              alt="pc con cara sonriente"
+              class="resultadoCotizacionImg_img"
+            />
+            <p class="resultadoCotizacionImg_text">
+              Diligencia el formulario de cotización para conocer el costo y las
+              coberturas del seguro
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="errorModal_CotizarSeguro" class="cotizarSeguroModal">
+        <div class="modalCotitizarSeguro_content">
+          <span class="closeModalCotizarSeguro"><img src="./assets/cerrar.png" alt="cerrar modal" ></span>
+          <div class="ModalCotizarSeguroError">
+            <img src="./assets/errorImg.png" alt="imagen de error" class="ModalCotizarSeguroError_img">
+            <h4 class="ModalCotizarSeguroError_title">Monto no válido</h4>
+            <hr class="ModalCotizarSeguroError_hr" >
+            <p class="ModalCotizarSeguroError_p">El monto debe ser igual o mayor a $500,000 o igual o mayor a $14,000,000 para continuar.</p>
+          </div>
+          
+        
+        </div>
+      </div>
+
+      <!-- Tu formulario sigue igual -->
+    </div>
+    <script>
+      const selectElement = document.querySelector("#edadPersona");
+      for (let edad = 18; edad <= 65; edad++) {
+        const option = document.createElement("option");
+        option.value = `${edad}years`;
+        option.textContent = `${edad} años`;
+        selectElement.appendChild(option);
+      }
+
+      document
+        .querySelector("#valorActualDinero")
+        .addEventListener("input", function (e) {
+          const input = e.target;
+          let value = input.value.replace(/[^0-9]/g, ""); // Solo números
+
+          if (value) {
+            value = new Intl.NumberFormat("es-CO").format(value); // Formato colombiano
+            input.value = `$ ${value}`; // Agregar el símbolo de pesos
+          } else {
+            input.value = ""; // Limpiar si el usuario borra el valor
+          }
+        });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const switchInput = document.querySelector("#showRadios");
+        const radioContainer = document.querySelector(
+          "#formCotizaSeguroVida_radios"
+        );
+
+        switchInput.addEventListener("change", () => {
+          if (switchInput.checked) {
+            radioContainer.classList.remove("hiddenRadios");
+            radioContainer.classList.add("containerRadiosE");
+          } else {
+            radioContainer.classList.add("hiddenRadios");
+            radioContainer.classList.remove("containerRadiosE");
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("form");
+        const valorActualDinero = document.querySelector("#valorActualDinero");
+        const errormodalCotitizarSeguro_CotizarSeguro = document.querySelector("#errorModal_CotizarSeguro");
+        const closeModal = document.querySelector(".closeModalCotizarSeguro");
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault(); // Evitar envío del formulario para validar
+          const value = parseInt(
+            valorActualDinero.value.replace(/\D/g, ""), // Quitar caracteres no numéricos
+            10
+          );
+
+          if (isNaN(value) || value < 500000) {
+            // Mostrar el modal si el valor es inválido o menor a 500000
+            errorModal_CotizarSeguro.style.display = "block";
+          } else {
+            // Aquí puedes manejar el envío del formulario si todo está correcto
+            alert("Formulario enviado correctamente.");
+          }
+        });
+
+        // Cerrar el modal al hacer clic en la 'x'
+        closeModal.addEventListener("click", () => {
+          errorModal_CotizarSeguro.style.display = "none";
+        });
+
+        // Cerrar el modal al hacer clic fuera del contenido
+        window.addEventListener("click", (event) => {
+          if (event.target === errorModal_CotizarSeguro) {
+            errorModal_CotizarSeguro.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
