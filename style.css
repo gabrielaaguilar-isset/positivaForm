@@ -216,21 +216,14 @@
   background-color: #fff;
   margin-top: 29px;
 }
-<<<<<<< HEAD
 .resultadoCotizacionInfo {
-=======
-.resultadoCotizacionInfo{
->>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
+  display: none;
   width: 55%;
   height: 740.61px;
   padding: 40px;
   border-radius: 30px;
   background-color: #fff;
   margin-top: 29px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
 }
 .resultadoCotizacion_title {
   font-family: Poppins;
@@ -418,7 +411,53 @@
   justify-content: space-around;
   animation: slideDown 0.5s forwards; /* Aplicar la animación */
 }
+.resultadoCotizacionInfoCoti{
+  display: none;
+  margin-top: 20px;
+}
+.resultadoCotizacionInfoCoti_title{
+  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: -0.03em;
+color: #333333;
 
+}
+.resultadoCotizacionInfoCoti_container{
+  display: flex;
+  justify-content: space-between;
+}
+.resultadoCotizacionInfoCoti_container_img{
+  width: 24px;
+height: 21.52px;
+
+}
+.resultadoCotizacionInfoCoti_container_p{
+  //styleName: parrafos;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #173748;
+}
+.resultadoCotizacionInfoCoti_li{
+  list-style: none;
+}
+.resultadoCotizacionInfoCoti_container{
+  display: flex; 
+  align-items: center;
+  justify-items: center;
+}
+.resultadoCotizacionInfoCoti_container_precio{
+  color: #173748;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+ 
+  
+}
 /* Definición de la animación */
 @keyframes slideDown {
   from {
@@ -544,11 +583,7 @@ letter-spacing: -0.03em;
   .resultadoCotizacion {
     width: 50%;
   }
-<<<<<<< HEAD
   .resultadoCotizacionInfo {
-=======
-  .resultadoCotizacionInfo{
->>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
     width: 50%;
   }
 }
@@ -569,11 +604,7 @@ letter-spacing: -0.03em;
   .resultadoCotizacion {
     width: 100%;
   }
-<<<<<<< HEAD
   .resultadoCotizacionInfo {
-=======
-  .resultadoCotizacionInfo{
->>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
     width: 100%;
   }
   .containerFormYResult {

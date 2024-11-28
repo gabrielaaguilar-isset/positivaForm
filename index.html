@@ -71,7 +71,6 @@
                   class="formCotizaSeguroVida_select"
                   required
                 >
-                  <!--Se llena desde js-->
                 </select>
               </span>
 
@@ -210,125 +209,29 @@
               coberturas del seguro
             </p>
           </div>
+          <div class="resultadoCotizacionInfoCoti">
+            <p class="resultadoCotizacionInfoCoti_title">Este costo incluye:</p>
+            <ul class="resultadoCotizacionInfoCoti_ul">
+              <li class="resultadoCotizacionInfoCoti_li">
+                <div class="resultadoCotizacionInfoCoti_container"> 
+                  <img src="./assets/corazon.png" alt="corazon" class="resultadoCotizacionInfoCoti_container_img">
+                  <p class="resultadoCotizacionInfoCoti_container_p">Muerte por cualquier causa</p>
+                  <p class="resultadoCotizacionInfoCoti_container_precio">$35.000.000</p>
+                  <img src="./assets/exclamacion.png" class="resultadoCotizacionInfoCoti_container_error" >
+                </div>
+
+                <div class="resultadoCotizacionInfoCoti_container"> 
+                  <img src="./assets/corazon.png" alt="corazon" class="resultadoCotizacionInfoCoti_container_img">
+                  <p class="resultadoCotizacionInfoCoti_container_p">Muerte por cualquier causa</p>
+                  <p class="resultadoCotizacionInfoCoti_container_precio">$35.000.000</p>
+                  <img src="./assets/exclamacion.png" class="resultadoCotizacionInfoCoti_container_error" >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="resultadoCotizacionInfo">
-          <h2 class="resultadoCotizacion_title">
-            Resultado de <span style="color: #173748"> la cotización</span>
-          </h2>
-          <div class="resultadoCotizacion_bgGray">
-            <div class="resultadoCotizacion_containerCosto">
-              <p class="resultadoCotizacion_containerCosto_costo">
-                El costo de tu seguro es
-              </p>
-              <p class="resultadoCotizacion_containerCosto_total"> $ 900.000</p>
-            </div>
-            <p class="resultadoCotizacion_bgGray_anual">Anual</p>
-          </div>
-          <h3 class="resultadoCotizacion_incluye">Este costo incluye:</h3>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Muerte por cualquier causa</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Amparo de auxilio funerario</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Daños a terceros</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Incapacidad total o permanente (Invalidez)</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 7.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Gastos de defensa</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 7.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Perdida total por daño</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Perdida total por hurto</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Asistencia por movilidad</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
-          </div>
-
-<<<<<<< HEAD
-          <div class="containerButtonParaForm">
-            <button id="buttonSeccionResultados">Quiero este seguro</button>
-
-          </div>
-      
-
-=======
-          <section class="button-section">
-            <button>Quiero este seguro</button>
-          </section>
->>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
-          
-        </div>
+       
       </div>
 
       <div class="containerFormContactCotiza">
@@ -338,19 +241,19 @@
         <form action="" class="containerFormContact_form">
           <span class="containerFormContact_form_span">
             <label for="name" class="containerFormContact_form_label">Nombres y apellidos*</label>
-            <input type="text" id="name" class="containerFormContact_form_input" placeholder="Ingrese">
+            <input type="text" name="name" class="containerFormContact_form_input" >
           </span>
           <span class="containerFormContact_form_span">
             <label for="email" class="containerFormContact_form_label">Correo electrónico*</label>
-            <input type="text" id="email" class="containerFormContact_form_input" placeholder="Ingrese">
+            <input type="text" name="email" class="containerFormContact_form_input" placeholder="Ingrese">
           </span>
           <span class="containerFormContact_form_span">
-            <label for="email" class="containerFormContact_form_label" placeholder="Ingrese">Celular*</label>
-            <input type="number" id="email" class="containerFormContact_form_input">
+            <label for="telefono" class="containerFormContact_form_label">Celular*</label>
+            <input type="number" name="telefono" class="containerFormContact_form_input">
           </span>
 
           <span class="containerFormContact_form_span">
-            <input type="checkbox" id="acceptarPoliticas" class="containerFormContact_form_input">
+            <input type="checkbox" name="acceptarPoliticas" class="containerFormContact_form_input">
             <label for="acceptarPoliticas" class="containerFormContact_form_label">He leído y autorizo el tratamiento de datos personales según la <a href="/#">Política de privacidad de Positiva</a></label>
           </span>
 
@@ -386,7 +289,8 @@
      
 
     <script>
-      /*********Option de edades **********/
+   
+   /*********Option de edades **********/
       const selectElement = document.querySelector("#edadPersona");
       for (let edad = 18; edad <= 65; edad++) {
         const option = document.createElement("option");
@@ -406,6 +310,23 @@
           input.value = "";
         }
       });
+
+      const cotizacionSeguroDeudorespagina = [
+        {
+          total: 9000,
+          pagofechas: 'anual',
+          motoSegurosDeudores: [
+          { nombre: "Muerte por cualquier causa", monto: 35000000 },
+    { nombre: "Amparo de auxilio funerario", monto: 35000000 },
+    { nombre: "Daños a terceros", monto: 35000000 },
+    { nombre: "Incapacidad total o permanente (Invalidez)", monto: 7000000 },
+    { nombre: "Gastos de defensa", monto: 7000000 },
+    { nombre: "Perdida total por daño", monto: 2500000 },
+    { nombre: "Perdida total por hurto", monto: 2500000 },
+          ],
+        },
+        
+      ];
 
 
 
@@ -449,10 +370,12 @@
             radioContainer.classList.add("containerRadiosE");
             errorDeIncapacidadLabel.classList.remove("textoRojoError");
             errorModal.style.display = "none";
+
           } else {
             radioContainer.classList.add("hiddenRadios");
             radioContainer.classList.remove("containerRadiosE");
           }
+
         });
 
         formularCotizarSeguro.addEventListener("submit", (event) => {
@@ -476,6 +399,16 @@
             errorModal.style.display = "flex";
           }
 
+          switchInput.addEventListener("change", () => {
+            if (switchInput.checked) {
+              const index = hayErrores.indexOf("El switch debe estar activado.");
+  
+  if (index !== -1) {
+    hayErrores.splice(index, 1);
+  }
+          }
+
+          });
           // Verificar si el campo de valor actual está vacío
           if (!valorActualDinero.value.trim()) {
             hayErrores.push("Hay un campo vacío");
@@ -491,7 +424,15 @@
               "Por favor, completa todos los campos obligatorios para continuar.";
             errorModal.style.display = "flex";
             valorActualDinero.classList.add("borderRojoError");
-          }
+          }else {
+  // Encontrar el índice del mensaje de error específico
+  const index = hayErrores.indexOf("Hay un campo vacío");
+  
+  // Si el mensaje existe en el array, eliminarlo
+  if (index !== -1) {
+    hayErrores.splice(index, 1);
+  }
+}
 
           valorActualDinero.addEventListener("input", () => {
             valorActualDinero.classList.remove("borderRojoError");
@@ -514,25 +455,22 @@
             // Mostrar el modal si el valor es inválido o menor a 500000
             errorModal_CotizarSeguro.style.display = "block";
             hayErrores.push("debe ser mayor a 5000000");
-
             
-          } else {
-<<<<<<< HEAD
-            document.querySelector('.resultadoCotizacion').style.display = 'none';
-            document.querySelector('.resultadoCotizacionInfo').style.display = 'block';
-=======
-            // Aquí puedes manejar el envío del formulario si todo está correcto
-            document.querySelector('.resultadoCotizacion').style.display = 'none';
-            document.querySelector('.resultadoCotizacionInfo').style.display = 'block';
-            alert("Formulario enviado correctamente.");
->>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
-          }
+          }else {
+  // Encontrar el índice del mensaje de error específico
+  const index = hayErrores.indexOf("debe ser mayor a 5000000");
+  
+  // Si el mensaje existe en el array, eliminarlo
+  if (index !== -1) {
+    hayErrores.splice(index, 1);
+  }
+}
           errorModal_CotizarSeguro.addEventListener("click", (event) => {
             if (event.target === errorModal_CotizarSeguro) {
               errorModal_CotizarSeguro.style.display = "none";
             } //cierra el de input numero
 
-            closeModal.addEventListener("click", () => {
+            closeModalConFoto.addEventListener("click", () => {
               errorModal_CotizarSeguro.style.display = "none"; //el del input
             });
 
@@ -551,14 +489,18 @@
           closeModalConFoto.addEventListener("click", () => {
             errorModal_CotizarSeguro.style.display = "none"; // Solo cierra el modal de error
           });
+          console.error(hayErrores);
           if (hayErrores.length === 0) {
             alert("Formulario enviado correctamente.");
-          } else {
-            return;
-          }
+         
+            document.querySelector(".resultadoCotizacionInfoCoti").style.display= "block";
+
+
+          } 
         });
       });
-
+      
+  
       const data = [
         {
           motoSegurosDeudores: [
@@ -596,6 +538,15 @@
             { id: 5, description: "Barranquilla" },
           ],
         },
+        {
+          resultadoCotizacion: [
+            { name: "Monto", description: "Bogota D.C" },
+            { id: 2, description: "Tunja" },
+            { id: 3, description: "Médellin" },
+            { id: 4, description: "Cali" },
+            { id: 5, description: "Barranquilla" },
+          ],
+        },
       ];
 
       const motoSegurosDeudoresSelect = document.getElementById(
@@ -610,8 +561,13 @@
       const ubicacionGeograficaSegurosDeudores = document.getElementById(
         "ubicacionGeograficaSegurosDeudores"
       );
-      const form = document.getElementById("form");
+      const formularCotizarSeguro = document.querySelector(
+          "#formCotizaSeguroVida"
+        );
 
+      
+
+        
       // Función para cargar las opciones de motos en el combo box
       function loadMotos() {
         const motos = data[0].motoSegurosDeudores; // Tomamos las motos del primer objeto del array
@@ -661,23 +617,7 @@
       loadOcupaciones();
       loadTipoCredito();
       loadUbicacionGeografica();
-      document.querySelector('.resultadoCotizacionInfo').style.display = 'none';
-
-      // Validación del formulario
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const moto = motoSegurosDeudoresSelect.value;
-        const ocupacion = ocupacionSegurosDeudoresSelect.value;
-
-        // Validamos que ambos campos estén seleccionados
-        if (!moto || !ocupacion) {
-          document.getElementById("error-message").textContent =
-            "Por favor, selecciona ambos campos. 000";
-        } else {
-          document.getElementById("error-message").textContent = ""; // Limpiamos el mensaje de error
-          alert("Formulario enviado correctamente");
-        }
-      });
+      
     </script>
   </body>
 </html>
