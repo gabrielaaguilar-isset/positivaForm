@@ -216,13 +216,21 @@
   background-color: #fff;
   margin-top: 29px;
 }
+<<<<<<< HEAD
 .resultadoCotizacionInfo {
+=======
+.resultadoCotizacionInfo{
+>>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
   width: 55%;
   height: 740.61px;
   padding: 40px;
   border-radius: 30px;
   background-color: #fff;
   margin-top: 29px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
 }
 .resultadoCotizacion_title {
   font-family: Poppins;
@@ -536,7 +544,11 @@ letter-spacing: -0.03em;
   .resultadoCotizacion {
     width: 50%;
   }
+<<<<<<< HEAD
   .resultadoCotizacionInfo {
+=======
+  .resultadoCotizacionInfo{
+>>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
     width: 50%;
   }
 }
@@ -557,7 +569,11 @@ letter-spacing: -0.03em;
   .resultadoCotizacion {
     width: 100%;
   }
+<<<<<<< HEAD
   .resultadoCotizacionInfo {
+=======
+  .resultadoCotizacionInfo{
+>>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
     width: 100%;
   }
   .containerFormYResult {

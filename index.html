@@ -315,12 +315,18 @@
             <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
           </div>
 
+<<<<<<< HEAD
           <div class="containerButtonParaForm">
             <button id="buttonSeccionResultados">Quiero este seguro</button>
 
           </div>
       
 
+=======
+          <section class="button-section">
+            <button>Quiero este seguro</button>
+          </section>
+>>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
           
         </div>
       </div>
@@ -511,8 +517,15 @@
 
             
           } else {
+<<<<<<< HEAD
             document.querySelector('.resultadoCotizacion').style.display = 'none';
             document.querySelector('.resultadoCotizacionInfo').style.display = 'block';
+=======
+            // Aquí puedes manejar el envío del formulario si todo está correcto
+            document.querySelector('.resultadoCotizacion').style.display = 'none';
+            document.querySelector('.resultadoCotizacionInfo').style.display = 'block';
+            alert("Formulario enviado correctamente.");
+>>>>>>> 460e781d2a4c5b791c8b8efebcfe734bc583448b
           }
           errorModal_CotizarSeguro.addEventListener("click", (event) => {
             if (event.target === errorModal_CotizarSeguro) {
@@ -577,15 +590,6 @@
         {
           ubicacionGeograficaSegurosDeudores: [
             { id: 1, description: "Bogota D.C" },
-            { id: 2, description: "Tunja" },
-            { id: 3, description: "Médellin" },
-            { id: 4, description: "Cali" },
-            { id: 5, description: "Barranquilla" },
-          ],
-        },
-        {
-          resultadoCotizacion: [
-            { name: "Monto", description: "Bogota D.C" },
             { id: 2, description: "Tunja" },
             { id: 3, description: "Médellin" },
             { id: 4, description: "Cali" },
