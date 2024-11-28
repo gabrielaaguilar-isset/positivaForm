@@ -325,54 +325,123 @@
   justify-content: center;
   align-items: center;
 }
-.ModalCotizarSeguroError_title{
-
-font-family: Poppins;
-font-size: 25px;
-font-weight: 600;
-line-height: 34.5px;
-text-align: center;
-margin-top: 24px;
+.ModalCotizarSeguroError_title {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 34.5px;
+  text-align: center;
+  margin-top: 24px;
 }
 
-.ModalCotizarSeguroError_hr{
+.ModalCotizarSeguroError_hr {
   width: 60px;
   height: 5px;
-  background: #FF8500;
+  background: #ff8500;
   border-radius: 5px;
   border: none;
   margin-top: 4px;
-  
 }
-.ModalCotizarSeguroError_p{
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-margin-top: 28px;
+.ModalCotizarSeguroError_p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 28px;
 }
 
 .closeModalCotizarSeguro {
- display: flex; 
- justify-content: flex-end;  
- margin-top: -15px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -15px;
 }
 
-.ModalCotizarSeguroError_img{
+.ModalCotizarSeguroError_img {
   width: 87px;
-height: 87px;
-margin-top: -15px;
+  height: 87px;
+  margin-top: -15px;
 }
-.closeModalCotizarSeguro > img{
+.closeModalCotizarSeguro > img {
   width: 33.33px;
-height: 33.33px;
-
+  height: 33.33px;
 }
 .closeModalCotizarSeguro:hover,
 .closeModalCotizarSeguro:focus {
   color: black;
   text-decoration: none;
+}
+.formCotizaSeguroVida_errorP {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #e60003;
+  animation: slideDown 0.5s forwards;
+}
+.CotizadorDeu_errorcitoModal {
+  display: none;
+  width: 540px;
+  height: 102pxpx;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 48px;
+  top: 15px;
+  box-shadow: 4px 4px 65px 0px #cbd0e259;
+  justify-content: space-around;
+  animation: slideDown 0.5s forwards; /* Aplicar la animación */
+}
+
+/* Definición de la animación */
+@keyframes slideDown {
+  from {
+    top: -150px; /* Comienza fuera de la vista */
+    opacity: 0; /* Comienza invisible */
+  }
+  to {
+    top: 15px; /* Posición final */
+    opacity: 1; /* Termina visible */
+  }
+}
+.CotizadorDeu_errorcitoModal_imgC {
+  border-left: 3px solid #e60003;
+  padding-left: 15px;
+}
+.CotizadorDeu_errorcitoModal_imgC_img {
+  width: 24px;
+  height: 24px;
+}
+.CotizadorDeu_errorcitoModal_titleC_t {
+  //styleName: Sub 16 semibold;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: justified;
+  color: #101010;
+}
+.CotizadorDeu_errorcitoModal_titleC_p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: justified;
+  color: #656565;
+  margin-top: 6px;
+}
+.CotizadorDeu_errorcitoModal_x {
+  margin-top: -5px;
+  cursor:pointer;
+}
+.borderRojoError{
+  border: 1px solid #E60003;
+}
+.textoRojoError{
+  color: #E60003;
 }
 
 @media (max-width: 1146px) {
@@ -403,13 +472,32 @@ height: 33.33px;
   .containerFormYResult {
     gap: 20px;
   }
+  .CotizadorDeu_errorcitoModal {
+    right: 20px;
+  }
+}
+@media (max-width: 624px) {
+  .CotizadorDeu_errorcitoModal {
+    width: 400px;
+  }
 }
 @media (max-width: 540px) {
   .resultadoCotizacion_containerCosto_costo {
     width: 138px;
   }
 }
+@media (max-width: 494px) {
+  .CotizadorDeu_errorcitoModal {
+    width: 300px;
+  }
 
+  .CotizadorDeu_errorcitoModal_imgC {
+    padding-left: 6px;
+  }
+  .CotizadorDeu_errorcitoModal {
+    right: 10px;
+  }
+}
 @media (max-width: 460px) {
   .formCotizaSeguroVida_title {
     font-size: 25px;
