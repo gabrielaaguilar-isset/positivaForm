@@ -208,6 +208,115 @@
             </p>
           </div>
         </div>
+
+        <div class="resultadoCotizacionInfo">
+          <h2 class="resultadoCotizacion_title">
+            Resultado de <span style="color: #173748"> la cotización</span>
+          </h2>
+          <div class="resultadoCotizacion_bgGray">
+            <div class="resultadoCotizacion_containerCosto">
+              <p class="resultadoCotizacion_containerCosto_costo">
+                El costo de tu seguro es
+              </p>
+              <p class="resultadoCotizacion_containerCosto_total"> $ 900.000</p>
+            </div>
+            <p class="resultadoCotizacion_bgGray_anual">Anual</p>
+          </div>
+          <h3 class="resultadoCotizacion_incluye">Este costo incluye:</h3>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Muerte por cualquier causa</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Amparo de auxilio funerario</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Daños a terceros</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Incapacidad total o permanente (Invalidez)</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 7.000.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Gastos de defensa</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 7.000.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Perdida total por daño</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Perdida total por hurto</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-name">
+              <img
+                class="heart-icon"
+                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
+                alt="heart-icon"
+              />
+              <span class="resultadoCotizacion_containerCosto_costo">Asistencia por movilidad</span>
+            </div>
+            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
+          </div>
+
+          <section class="button-section">
+            <button>Quiero este seguro</button>
+          </section>
+          
+        </div>
       </div>
       <!-- Modal -->
       <div id="errorModal_CotizarSeguro" class="cotizarSeguroModal">
@@ -352,6 +461,8 @@
             errorModal_CotizarSeguro.style.display = "block";
           } else {
             // Aquí puedes manejar el envío del formulario si todo está correcto
+            document.querySelector('.resultadoCotizacion').style.display = 'none';
+            document.querySelector('.resultadoCotizacionInfo').style.display = 'block';
             alert("Formulario enviado correctamente.");
           }
         });
@@ -432,15 +543,6 @@
             { id: 5, description: "Barranquilla" },
           ],
         },
-        {
-          resultadoCotizacion: [
-            { name: "Monto", description: "Bogota D.C" },
-            { id: 2, description: "Tunja" },
-            { id: 3, description: "Médellin" },
-            { id: 4, description: "Cali" },
-            { id: 5, description: "Barranquilla" },
-          ],
-        },
       ];
 
       const motoSegurosDeudoresSelect = document.getElementById(
@@ -506,6 +608,7 @@
       loadOcupaciones();
       loadTipoCredito();
       loadUbicacionGeografica();
+      document.querySelector('.resultadoCotizacionInfo').style.display = 'none';
 
       // Validación del formulario
       form.addEventListener("submit", (e) => {
