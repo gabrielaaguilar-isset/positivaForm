@@ -490,7 +490,7 @@
 }
 
 .containerFormContactCotiza {
-  width: 45%;
+  width: 44%;
   padding: 40px;
   border-radius: 30px;
   background-color: #fff;
@@ -511,6 +511,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 20px;
 letter-spacing: -0.01em;
+max-width: 420px;
 }
 .containerFormContact_form{
   margin-top:20px;
