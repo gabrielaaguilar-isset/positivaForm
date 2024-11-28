@@ -17,6 +17,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="CotizadorDeu_errorcitoModal">
+      <div class="CotizadorDeu_errorcitoModal_imgC">
+        <img
+          src="./assets/hexagono-equis.png"
+          alt="exagono error"
+          class="CotizadorDeu_errorcitoModal_imgC_img"
+        />
+      </div>
+      <div class="CotizadorDeu_errorcitoModal_titleC">
+        <h3 class="CotizadorDeu_errorcitoModal_titleC_t"></h3>
+        <p class="CotizadorDeu_errorcitoModal_titleC_p"></p>
+      </div>
+      <span class="CotizadorDeu_errorcitoModal_x">&#10005;</span>
+    </div>
     <div class="CotizadorDeu">
       <a href="/#" class="CotizadorDeu_button"
         ><span class="CotizadorDeu_button_flecha">&#171;</span>Volver al seguro
@@ -29,33 +43,18 @@
           </h2>
 
           <div class="formCotizaSeguroVida_formContainer">
-            <form action="">
+            <form action="" id="formCotizaSeguroVida">
               <span class="formCotizaSeguroVida_inputContainer">
                 <label for="manejaMoto" class="formCotizaSeguroVida_label"
                   >Manejas moto*</label
                 >
                 <select
-                  name="manejaMoto"
-                  id="manejaMoto"
+                  name="motoSegurosDeudores"
+                  id="motoSegurosDeudores"
                   class="formCotizaSeguroVida_select"
                   required
                 >
-                  <option value="" disabled selected>
-                    Selecciona una opción
-                  </option>
-
-                  <option value="motocicletaTransporte">
-                    Motocicleta transporte
-                  </option>
-                  <option value="motocicletaTransporte">
-                    Motocicleta transporte
-                  </option>
-                  <option value="motocicletaTransporte">
-                    Motocicleta transporte
-                  </option>
-                  <option value="motocicletaTransporte">
-                    Motocicleta transporte
-                  </option>
+                  <option value="">Elige una opción</option>
                 </select>
               </span>
 
@@ -78,18 +77,14 @@
                   >Ocupacion*</label
                 >
                 <select
-                  name="ocupacionPersona"
-                  id="ocupacionPersona"
+                  name="ocupacionSegurosDeudores"
+                  id="ocupacionSegurosDeudores"
                   class="formCotizaSeguroVida_select"
                   required
                 >
                   <option value="" disabled selected>
                     Selecciona una opción
                   </option>
-
-                  <option value="ingenieroSistema">Ingeniero</option>
-                  <option value="doctorQueCura">Doctor que cura</option>
-                  <option value="otro">Otro</option>
                 </select>
               </span>
 
@@ -98,20 +93,13 @@
                   >Tipo de crédito*</label
                 >
                 <select
-                  name="creditoPersona"
-                  id="creditoPersona"
+                  name="tipoCreditoSegurosDeudores"
+                  id="tipoCreditoSegurosDeudores"
                   class="formCotizaSeguroVida_select"
-                  required
                 >
                   <option value="" disabled selected>
                     Selecciona una opción
                   </option>
-
-                  <option value="LeasingHabitalNoVisEnUVr">
-                    Leasing habitacional no vis en uvr
-                  </option>
-                  <option value="sinCredito">Sin Credito</option>
-                  <option value="otro">Otro</option>
                 </select>
               </span>
 
@@ -124,7 +112,9 @@
                   />
                   <span class="formCotizaSeguroVida_slider"></span>
                 </label>
-                <label for="showRadios" class="formCotizaSeguroVida_label"
+                <label
+                  for="showRadios"
+                  class="formCotizaSeguroVida_label labelDeInputCheck"
                   >Incapacidad total y permanente</label
                 >
               </div>
@@ -155,18 +145,14 @@
                   >Ubicación geográfica*</label
                 >
                 <select
-                  name="ocupacionPersona"
-                  id="ocupacionPersona"
+                  name="ubicacionGeograficaSegurosDeudores"
+                  id="ubicacionGeograficaSegurosDeudores"
                   class="formCotizaSeguroVida_select"
                   required
                 >
                   <option value="" disabled selected>
                     Selecciona una opción
                   </option>
-
-                  <option value="bogotadc">Bogota D.C</option>
-                  <option value="Cucuta">Cucuta</option>
-                  <option value="otro">Otro</option>
                 </select>
               </span>
 
@@ -182,7 +168,6 @@
                   id="valorActualDinero"
                   class="formCotizaSeguroVida_input"
                   placeholder="$"
-                  required
                 />
               </span>
               <div class="containerButtonSubmit">
@@ -227,15 +212,22 @@
       <!-- Modal -->
       <div id="errorModal_CotizarSeguro" class="cotizarSeguroModal">
         <div class="modalCotitizarSeguro_content">
-          <span class="closeModalCotizarSeguro"><img src="./assets/cerrar.png" alt="cerrar modal" ></span>
+          <span class="closeModalCotizarSeguro"
+            ><img src="./assets/cerrar.png" alt="cerrar modal"
+          /></span>
           <div class="ModalCotizarSeguroError">
-            <img src="./assets/errorImg.png" alt="imagen de error" class="ModalCotizarSeguroError_img">
+            <img
+              src="./assets/errorImg.png"
+              alt="imagen de error"
+              class="ModalCotizarSeguroError_img"
+            />
             <h4 class="ModalCotizarSeguroError_title">Monto no válido</h4>
-            <hr class="ModalCotizarSeguroError_hr" >
-            <p class="ModalCotizarSeguroError_p">El monto debe ser igual o mayor a $500,000 o igual o mayor a $14,000,000 para continuar.</p>
+            <hr class="ModalCotizarSeguroError_hr" />
+            <p class="ModalCotizarSeguroError_p">
+              El monto debe ser igual o mayor a $500,000 o igual o mayor a
+              $14,000,000 para continuar.
+            </p>
           </div>
-          
-        
         </div>
       </div>
 
@@ -250,51 +242,112 @@
         selectElement.appendChild(option);
       }
 
-      document
-        .querySelector("#valorActualDinero")
-        .addEventListener("input", function (e) {
+      document.addEventListener("DOMContentLoaded", () => {
+        const formularCotizarSeguro = document.querySelector(
+          "#formCotizaSeguroVida"
+        );
+        const valorActualDinero = document.querySelector("#valorActualDinero");
+        const errorModal = document.querySelector(
+          ".CotizadorDeu_errorcitoModal"
+        );
+        const errorTitle = document.querySelector(
+          ".CotizadorDeu_errorcitoModal_titleC_t"
+        );
+        const errorMessage = document.querySelector(
+          ".CotizadorDeu_errorcitoModal_titleC_p"
+        );
+        const switchInput = document.querySelector("#showRadios");
+        const radioContainer = document.querySelector(
+          "#formCotizaSeguroVida_radios"
+        );
+        const closeModalConFoto = document.querySelector(
+          ".closeModalCotizarSeguro"
+        );
+
+        const errorDeIncapacidadLabel =
+          document.querySelector(".labelDeInputCheck");
+        const errorModal_CotizarSeguro = document.querySelector(
+          "#errorModal_CotizarSeguro"
+        );
+
+        valorActualDinero.addEventListener("input", function (e) {
           const input = e.target;
           let value = input.value.replace(/[^0-9]/g, ""); // Solo números
 
           if (value) {
             value = new Intl.NumberFormat("es-CO").format(value); // Formato colombiano
-            input.value = `$ ${value}`; // Agregar el símbolo de pesos
+            input.value = `$ ${value}`;
           } else {
-            input.value = ""; // Limpiar si el usuario borra el valor
+            input.value = "";
           }
         });
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const switchInput = document.querySelector("#showRadios");
-        const radioContainer = document.querySelector(
-          "#formCotizaSeguroVida_radios"
-        );
 
         switchInput.addEventListener("change", () => {
           if (switchInput.checked) {
             radioContainer.classList.remove("hiddenRadios");
             radioContainer.classList.add("containerRadiosE");
+            errorDeIncapacidadLabel.classList.remove("textoRojoError");
+            errorModal.style.display = "none";
           } else {
             radioContainer.classList.add("hiddenRadios");
             radioContainer.classList.remove("containerRadiosE");
           }
         });
-      });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const form = document.querySelector("form");
-        const valorActualDinero = document.querySelector("#valorActualDinero");
-        const errormodalCotitizarSeguro_CotizarSeguro = document.querySelector("#errorModal_CotizarSeguro");
-        const closeModal = document.querySelector(".closeModalCotizarSeguro");
+        formularCotizarSeguro.addEventListener("submit", (event) => {
+          event.preventDefault();
 
-        form.addEventListener("submit", (event) => {
-          event.preventDefault(); // Evitar envío del formulario para validar
+          const existingErrorParagraph = document.querySelector(
+            ".formCotizaSeguroVida_errorP"
+          );
+          if (existingErrorParagraph) {
+            existingErrorParagraph.remove();
+          }
+          let hayErrores = false;
+
+          if (!switchInput.checked) {
+            hayErrores = true;
+            errorDeIncapacidadLabel.classList.add("textoRojoError");
+            errorTitle.textContent = "Para poder continuar";
+            errorMessage.textContent =
+              "Debes seleccionar la cobertura Incapacidad Total y Permanente (TTP) para continuar con este crédito.";
+            errorModal.style.display = "flex";
+          }
+
+          if (!valorActualDinero.value.trim()) {
+            hayErrores = true;
+
+            const errorParagraph = document.createElement("p");
+            errorParagraph.classList.add("formCotizaSeguroVida_errorP");
+            errorParagraph.textContent = "Ingresa la información";
+
+            valorActualDinero.insertAdjacentElement("afterend", errorParagraph);
+
+            errorTitle.textContent = "Completa los campos faltantes";
+            errorMessage.textContent =
+              "Por favor, completa todos los campos obligatorios para continuar.";
+            errorModal.style.display = "flex";
+            valorActualDinero.classList.add("borderRojoError");
+          }
+
+          valorActualDinero.addEventListener("input", () => {
+            valorActualDinero.classList.remove("borderRojoError");
+
+            const existingErrorParagraph = document.querySelector(
+              ".formCotizaSeguroVida_errorP"
+            );
+            if (existingErrorParagraph) {
+              existingErrorParagraph.remove();
+              errorModal.style.display = "none";
+            }
+          });
+
           const value = parseInt(
             valorActualDinero.value.replace(/\D/g, ""), // Quitar caracteres no numéricos
             10
           );
 
-          if (isNaN(value) || value < 500000) {
+          if (isNaN(value) || value < 500000 ) {
             // Mostrar el modal si el valor es inválido o menor a 500000
             errorModal_CotizarSeguro.style.display = "block";
           } else {
@@ -304,7 +357,7 @@
         });
 
         // Cerrar el modal al hacer clic en la 'x'
-        closeModal.addEventListener("click", () => {
+        closeModalConFoto.addEventListener("click", () => {
           errorModal_CotizarSeguro.style.display = "none";
         });
 
@@ -313,7 +366,161 @@
           if (event.target === errorModal_CotizarSeguro) {
             errorModal_CotizarSeguro.style.display = "none";
           }
+
+          if (!hayErrores) {
+            alert("Formulario enviado correctamente.");
+            form.submit(); // Enviar solo si no hay errores
+          }
+
+          document
+            .querySelector(".closeModalCotizarSeguro")
+            .addEventListener("click", () => {
+              errorModal.style.display = "none";
+            });
+          document
+            .querySelector(".CotizadorDeu_errorcitoModal_x")
+            .addEventListener("click", () => {
+              errorModal.style.display = "none";
+            });
+
+          closeModal.addEventListener("click", () => {
+            errorModal_CotizarSeguro.style.display = "none";
+          });
+
+          window.addEventListener("click", (event) => {
+            if (event.target === errorModal_CotizarSeguro) {
+              errorModal_CotizarSeguro.style.display = "none";
+            }
+          });
         });
+      });
+      // Datos simulados (JSON)
+      const data = [
+        {
+          motoSegurosDeudores: [
+            { id: 1, description: "Motocicleta" },
+            { id: 2, description: "Cuatrimoto" },
+            { id: 3, description: "Monociclo" },
+            { id: 4, description: "Monopatín" },
+            { id: 5, description: "Patín" },
+          ],
+        },
+        {
+          ocupacionSegurosDeudores: [
+            { id: 1, description: "Ingeniero" },
+            { id: 2, description: "Abogado" },
+            { id: 3, description: "Médico" },
+            { id: 4, description: "Contador" },
+            { id: 5, description: "Periodista" },
+          ],
+        },
+        {
+          tipoCreditoSegurosDeudores: [
+            { id: 1, description: "Libre Inversion" },
+            { id: 2, description: "Leasing Habitacional" },
+            { id: 3, description: "Hipotecario" },
+            { id: 4, description: "Educativo" },
+            { id: 5, description: "Bajo Monto" },
+          ],
+        },
+        {
+          ubicacionGeograficaSegurosDeudores: [
+            { id: 1, description: "Bogota D.C" },
+            { id: 2, description: "Tunja" },
+            { id: 3, description: "Médellin" },
+            { id: 4, description: "Cali" },
+            { id: 5, description: "Barranquilla" },
+          ],
+        },
+        {
+          resultadoCotizacion: [
+            { name: "Monto", description: "Bogota D.C" },
+            { id: 2, description: "Tunja" },
+            { id: 3, description: "Médellin" },
+            { id: 4, description: "Cali" },
+            { id: 5, description: "Barranquilla" },
+          ],
+        },
+      ];
+
+      const motoSegurosDeudoresSelect = document.getElementById(
+        "motoSegurosDeudores"
+      );
+      const ocupacionSegurosDeudoresSelect = document.getElementById(
+        "ocupacionSegurosDeudores"
+      );
+      const tipoCreditoSegurosDeudoresSelect = document.getElementById(
+        "tipoCreditoSegurosDeudores"
+      );
+      const ubicacionGeograficaSegurosDeudores = document.getElementById(
+        "ubicacionGeograficaSegurosDeudores"
+      );
+      const form = document.getElementById("form");
+
+      // Función para cargar las opciones de motos en el combo box
+      function loadMotos() {
+        const motos = data[0].motoSegurosDeudores; // Tomamos las motos del primer objeto del array
+        motos.forEach((moto) => {
+          const option = document.createElement("option");
+          option.value = moto.id; // Valor será el id de la moto
+          option.textContent = moto.description; // Texto será la descripción de la moto
+          motoSegurosDeudoresSelect.appendChild(option); // Agregar al select
+        });
+      }
+
+      // Función para cargar las opciones de ocupaciones en el combo box
+      function loadOcupaciones() {
+        const ocupaciones = data[1].ocupacionSegurosDeudores; // Tomamos las ocupaciones del segundo objeto del array
+        ocupaciones.forEach((ocupacion) => {
+          const option = document.createElement("option");
+          option.value = ocupacion.id; // Valor será el id de la ocupación
+          option.textContent = ocupacion.description; // Texto será la descripción de la ocupación
+          ocupacionSegurosDeudoresSelect.appendChild(option); // Agregar al select
+        });
+      }
+
+      // Función para cargar las opciones de tipo credito en el combo box
+      function loadTipoCredito() {
+        const tipoCredito = data[2].tipoCreditoSegurosDeudores; // Tomamos las motos del primer objeto del array
+        tipoCredito.forEach((tipoCredito) => {
+          const option = document.createElement("option");
+          option.value = tipoCredito.id; // Valor será el id de la moto
+          option.textContent = tipoCredito.description; // Texto será la descripción de la moto
+          tipoCreditoSegurosDeudoresSelect.appendChild(option); // Agregar al select
+        });
+      }
+
+      // Función para cargar las opciones de ubicacion geografica en el combo box
+      function loadUbicacionGeografica() {
+        const ubicacionGeografica = data[3].ubicacionGeograficaSegurosDeudores; // Tomamos las ocupaciones del segundo objeto del array
+        ubicacionGeografica.forEach((ubicacionGeografica) => {
+          const option = document.createElement("option");
+          option.value = ubicacionGeografica.id; // Valor será el id de la ocupación
+          option.textContent = ubicacionGeografica.description; // Texto será la descripción de la ocupación
+          ubicacionGeograficaSegurosDeudores.appendChild(option); // Agregar al select
+        });
+      }
+
+      // Cargar las opciones al iniciar la página
+      loadMotos();
+      loadOcupaciones();
+      loadTipoCredito();
+      loadUbicacionGeografica();
+
+      // Validación del formulario
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const moto = motoSegurosDeudoresSelect.value;
+        const ocupacion = ocupacionSegurosDeudoresSelect.value;
+
+        // Validamos que ambos campos estén seleccionados
+        if (!moto || !ocupacion) {
+          document.getElementById("error-message").textContent =
+            "Por favor, selecciona ambos campos. 000";
+        } else {
+          document.getElementById("error-message").textContent = ""; // Limpiamos el mensaje de error
+          alert("Formulario enviado correctamente");
+        }
       });
     </script>
   </body>
