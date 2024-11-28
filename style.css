@@ -5,9 +5,8 @@
 }
 .CotizadorDeu {
   width: 100%;
-  height: 100vh;
   background: center / cover no-repeat url("./assets/background.svg");
-  height: auto;
+
   padding: 30px 120px 90px 120px;
 }
 .CotizadorDeu_button {
@@ -68,7 +67,7 @@
   margin-bottom: 3px;
 }
 .formCotizaSeguroVida_input,
-.formCotizaSeguroVida_select {
+.formCotizaSeguroVida_select, .containerFormContact_form_input {
   padding: 8px 15px;
   border-radius: 5px;
   border: 1px solid #dadada;
@@ -217,6 +216,14 @@
   background-color: #fff;
   margin-top: 29px;
 }
+.resultadoCotizacionInfo {
+  width: 55%;
+  height: 740.61px;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-top: 29px;
+}
 .resultadoCotizacion_title {
   font-family: Poppins;
   font-size: 20px;
@@ -249,6 +256,14 @@
 .resultadoCotizacion_containerCosto_total {
   font-family: Roboto;
   font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: right;
+}
+.resultadoCotizacion_container_item_seguro {
+  font-family: Roboto;
+  font-size: 15px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: -0.03em;
@@ -435,20 +450,92 @@
 }
 .CotizadorDeu_errorcitoModal_x {
   margin-top: -5px;
-  cursor:pointer;
+  cursor: pointer;
 }
-.borderRojoError{
-  border: 1px solid #E60003;
+.borderRojoError {
+  border: 1px solid #e60003;
 }
-.textoRojoError{
-  color: #E60003;
+.textoRojoError {
+  color: #e60003;
+}
+.coverage-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadada;
+  padding: 8px 15px;
+  align-content: center;
+  align-items: center;
+}
+.coverage-name {
+  display: flex;
+  gap: 14px;
+}
+.containerButtonParaForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+#buttonSeccionResultados {
+  padding: 8px 15px 8px 15px;
+  border-radius: 5px;
+  border: 1px;
+  background-color: #173748;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  margin: auto;
 }
 
+.containerFormContactCotiza {
+  width: 45%;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-top:15px;
+}
+.containerFormContact_title{
+  font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: -0.03em;
+margin-bottom: 20px;
+
+}
+.containerFormContact_p{
+  font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: -0.01em;
+}
+.containerFormContact_form{
+  margin-top:20px;
+}
+.containerFormContact_form_span{
+  display: flex;
+  flex-direction: column;
+}
+.containerFormContact_form_label{
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.03em;
+
+
+}
 @media (max-width: 1146px) {
   .formCotizaSeguroVida {
     width: 50%;
   }
   .resultadoCotizacion {
+    width: 50%;
+  }
+  .resultadoCotizacionInfo {
     width: 50%;
   }
 }
@@ -467,6 +554,9 @@
     width: 100%;
   }
   .resultadoCotizacion {
+    width: 100%;
+  }
+  .resultadoCotizacionInfo {
     width: 100%;
   }
   .containerFormYResult {
