@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="CotizadorDeu_errorcitoModal">
       <div class="CotizadorDeu_errorcitoModal_imgC">
@@ -31,11 +32,13 @@
       </div>
       <span class="CotizadorDeu_errorcitoModal_x">&#10005;</span>
     </div>
+
     <div class="CotizadorDeu">
-      <a href="/#" class="CotizadorDeu_button"
-        ><span class="CotizadorDeu_button_flecha">&#171;</span>Volver al seguro
-        deudor</a
-      >
+      <a href="/#" class="CotizadorDeu_button">
+        <span class="CotizadorDeu_button_flecha">&#171;</span>Volver al seguro
+        deudor
+      </a>
+
       <div class="containerFormYResult">
         <div class="formCotizaSeguroVida">
           <h2 class="formCotizaSeguroVida_title">
@@ -52,10 +55,10 @@
                   name="motoSegurosDeudores"
                   id="motoSegurosDeudores"
                   class="formCotizaSeguroVida_select"
-                  required
                 >
                   <option value="">Elige una opción</option>
                 </select>
+                <p class="error-message-FormDeudores" id="motoSegurosDeudoresError">Selecciona una opción</p>
               </span>
 
               <span class="formCotizaSeguroVida_inputContainer">
@@ -66,10 +69,8 @@
                   name="edadPersona"
                   id="edadPersona"
                   class="formCotizaSeguroVida_select"
-                  required
-                >
-                  <!--Se llena desde js-->
-                </select>
+                ></select>
+                
               </span>
 
               <span class="formCotizaSeguroVida_inputContainer">
@@ -80,12 +81,12 @@
                   name="ocupacionSegurosDeudores"
                   id="ocupacionSegurosDeudores"
                   class="formCotizaSeguroVida_select"
-                  required
                 >
                   <option value="" disabled selected>
                     Selecciona una opción
                   </option>
                 </select>
+                <p class="error-message-FormDeudores" id="ocupacionSegurosDeudoresError">Selecciona una opción</p>
               </span>
 
               <span class="formCotizaSeguroVida_inputContainer">
@@ -100,7 +101,9 @@
                   <option value="" disabled selected>
                     Selecciona una opción
                   </option>
+                  
                 </select>
+                <p class="error-message-FormDeudores" id="tipoCreditoSegurosDeudoresError">Selecciona una opción</p>
               </span>
 
               <div class="formCotizaSeguroVida_radioC">
@@ -148,12 +151,12 @@
                   name="ubicacionGeograficaSegurosDeudores"
                   id="ubicacionGeograficaSegurosDeudores"
                   class="formCotizaSeguroVida_select"
-                  required
                 >
                   <option value="" disabled selected>
                     Selecciona una opción
                   </option>
                 </select>
+                <p class="error-message-FormDeudores" id="ubicacionGeograficaSegurosDeudoresError">Selecciona una opción</p>
               </span>
 
               <span class="formCotizaSeguroVida_inputContainer">
@@ -162,7 +165,6 @@
                   class="formCotizaSeguroVida_label"
                   >Valor actual de la deuda*</label
                 >
-
                 <input
                   type="text"
                   id="valorActualDinero"
@@ -170,6 +172,7 @@
                   placeholder="$"
                 />
               </span>
+
               <div class="containerButtonSubmit">
                 <input
                   type="submit"
@@ -183,7 +186,7 @@
 
         <div class="resultadoCotizacion">
           <h2 class="resultadoCotizacion_title">
-            Resultado de <span style="color: #173748"> la cotización</span>
+            Resultado de <span style="color: #173748">la cotización</span>
           </h2>
           <div class="resultadoCotizacion_bgGray">
             <div class="resultadoCotizacion_containerCosto">
@@ -194,8 +197,8 @@
             </div>
             <p class="resultadoCotizacion_bgGray_anual">______</p>
           </div>
-          <h3 class="resultadoCotizacion_incluye">Este costo incluye:</h3>
 
+          <h3 class="resultadoCotizacion_incluye">Este costo incluye:</h3>
           <div class="resultadoCotizacionImg">
             <img
               src="./assets/pc.png"
@@ -207,142 +210,133 @@
               coberturas del seguro
             </p>
           </div>
-        </div>
 
-        <div class="resultadoCotizacionInfo">
-          <h2 class="resultadoCotizacion_title">
-            Resultado de <span style="color: #173748"> la cotización</span>
-          </h2>
-          <div class="resultadoCotizacion_bgGray">
-            <div class="resultadoCotizacion_containerCosto">
-              <p class="resultadoCotizacion_containerCosto_costo">
-                El costo de tu seguro es
-              </p>
-              <p class="resultadoCotizacion_containerCosto_total"> $ 900.000</p>
-            </div>
-            <p class="resultadoCotizacion_bgGray_anual">Anual</p>
-          </div>
-          <h3 class="resultadoCotizacion_incluye">Este costo incluye:</h3>
-          <div class="coverage-item">
-            <div class="coverage-name">
+          <div class="resultadoCotizacionInfoCoti">
+            <div class="resultadoCotizacionInfoCoti_container">
+             <div class="resultadoCotizacionInfoCoti_containerIMGtext">
               <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Muerte por cualquier causa</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Amparo de auxilio funerario</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Daños a terceros</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 35.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Incapacidad total o permanente (Invalidez)</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 7.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Gastos de defensa</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 7.000.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Perdida total por daño</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Perdida total por hurto</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
-          </div>
-          <div class="coverage-item">
-            <div class="coverage-name">
-              <img
-                class="heart-icon"
-                src="https://webserver-portalsegurospositiva-uat.lfr.cloud/documents/2978451/4403000/corazoncito.svg/ff8bf352-9726-acea-ac35-c37525bf4606?t=1732558972552"
-                alt="heart-icon"
-              />
-              <span class="resultadoCotizacion_containerCosto_costo">Asistencia por movilidad</span>
-            </div>
-            <span class="resultadoCotizacion_container_item_seguro">$ 2.500.000</span>
-          </div>
-
-          <section class="button-section">
-            <button>Quiero este seguro</button>
-          </section>
-          
-        </div>
-      </div>
-      <!-- Modal -->
-      <div id="errorModal_CotizarSeguro" class="cotizarSeguroModal">
-        <div class="modalCotitizarSeguro_content">
-          <span class="closeModalCotizarSeguro"
-            ><img src="./assets/cerrar.png" alt="cerrar modal"
-          /></span>
-          <div class="ModalCotizarSeguroError">
-            <img
-              src="./assets/errorImg.png"
-              alt="imagen de error"
-              class="ModalCotizarSeguroError_img"
+              src="./assets/corazon.png"
+              alt="corazon"
+              class="resultadoCotizacionInfoCoti_container_img"
             />
-            <h4 class="ModalCotizarSeguroError_title">Monto no válido</h4>
-            <hr class="ModalCotizarSeguroError_hr" />
-            <p class="ModalCotizarSeguroError_p">
-              El monto debe ser igual o mayor a $500,000 o igual o mayor a
-              $14,000,000 para continuar.
+            <p class="resultadoCotizacionInfoCoti_container_p">
+              Muerte por cualquier causa
             </p>
+
+             </div>
+             
+              <p class="resultadoCotizacionInfoCoti_container_precio">
+                $35.000.000
+              </p>
+              <img
+                src="./assets/exclamacion.png"
+                class="resultadoCotizacionInfoCoti_container_error"
+              />
+            </div>
+            <div class="resultadoCotizacionInfoCoti_container">
+              <img
+                src="./assets/corazon.png"
+                alt="corazon"
+                class="resultadoCotizacionInfoCoti_container_img"
+              />
+              <p class="resultadoCotizacionInfoCoti_container_p">
+                Muerte por cualquier causa
+              </p>
+              <p class="resultadoCotizacionInfoCoti_container_precio">
+                $35.000.000
+              </p>
+              <img
+                src="./assets/exclamacion.png"
+                class="resultadoCotizacionInfoCoti_container_error"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Tu formulario sigue igual -->
+      <div class="containerFormContactCotiza">
+        <h3 class="containerFormContact_title">
+          Nos comunicaremos <span style="color: #ff7500">contigo</span>
+        </h3>
+        <p class="containerFormContact_p">
+          Costo aproximado de tu cotización. Si te interesa este valor, déjanos
+          tus datos para que un asesor se comunique contigo y resuelva tus
+          dudas.
+        </p>
+        <form action="" class="containerFormContact_form" id="formNosComunicamos">
+          <span class="containerFormContact_form_span">
+            <label for="name" class="containerFormContact_form_label"
+              >Nombres y apellidos*</label
+            >
+            <input
+              type="text"
+              name="name"
+              class="containerFormContact_form_input" id="nameNosComunicamos"
+            />
+          </span>
+          <span class="containerFormContact_form_span">
+            <label for="email" class="containerFormContact_form_label"
+              >Correo electrónico*</label
+            >
+            <input
+              type="text"
+              name="email"
+              class="containerFormContact_form_input" id="emailNosComunicamos"
+              placeholder="Ingrese"
+            />
+          </span>
+          <span class="containerFormContact_form_span">
+            <label for="telefono" class="containerFormContact_form_label"
+              >Celular*</label
+            >
+            <input
+              type="number"
+              name="telefono"
+              class="containerFormContact_form_input" id="telefonoNosComunicamos"
+            />
+          </span>
+          <span class="containerFormContact_form_span">
+            <input
+              type="checkbox"
+              name="acceptarPoliticas"
+              class="containerFormContact_form_input" id="acceptarPoliticasNosComunicamos"
+            />
+            <label
+              for="acceptarPoliticas"
+              class="containerFormContact_form_label"
+            >
+              He leído y autorizo el tratamiento de datos personales según la
+              <a href="/#">Política de privacidad de Positiva</a>
+            </label>
+          </span>
+          <input type="submit" value="Enviar datos" />
+        </form>
+      </div>
     </div>
+
+    <div id="errorModal_CotizarSeguro" class="cotizarSeguroModal">
+      <div class="modalCotitizarSeguro_content">
+        <span class="closeModalCotizarSeguro">
+          <img src="./assets/cerrar.png" alt="cerrar modal" />
+        </span>
+        <div class="ModalCotizarSeguroError">
+          <img
+            src="./assets/errorImg.png"
+            alt="imagen de error"
+            class="ModalCotizarSeguroError_img"
+          />
+          <h4 class="ModalCotizarSeguroError_title">Monto no válido</h4>
+          <hr class="ModalCotizarSeguroError_hr" />
+          <p class="ModalCotizarSeguroError_p">
+            El monto debe ser igual o mayor a $500,000 o igual o mayor a
+            $14,000,000 para continuar.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <script>
+      /*********Option de edades **********/
       const selectElement = document.querySelector("#edadPersona");
       for (let edad = 18; edad <= 65; edad++) {
         const option = document.createElement("option");
@@ -350,6 +344,46 @@
         option.textContent = `${edad} años`;
         selectElement.appendChild(option);
       }
+      /*********poner signo de peso **********/
+      valorActualDinero.addEventListener("input", function (e) {
+        const input = e.target;
+        let value = input.value.replace(/[^0-9]/g, ""); // Solo números
+
+        if (value) {
+          value = new Intl.NumberFormat("es-CO").format(value); // Formato colombiano
+          input.value = `$ ${value}`;
+        } else {
+          input.value = "";
+        }
+      });
+
+      const cotizacionSeguroDeudorespagina = [
+        {
+          total: 9000,
+          pagofechas: "anual",
+          motoSegurosDeudores: [
+            {
+              nombre: "Muerte por cualquier causa",
+              monto: 35000000,
+              signo: false,
+            },
+            {
+              nombre: "Amparo de auxilio funerario",
+              monto: 35000000,
+              signo: false,
+            },
+            { nombre: "Daños a terceros", monto: 35000000, signo: false },
+            {
+              nombre: "Incapacidad total o permanente (Invalidez)",
+              monto: 7000000,
+              signo: true,
+            },
+            { nombre: "Gastos de defensa", monto: 7000000, signo: true },
+            { nombre: "Perdida total por daño", monto: 2500000, signo: false },
+            { nombre: "Perdida total por hurto", monto: 2500000, signo: true },
+          ],
+        },
+      ];
 
       document.addEventListener("DOMContentLoaded", () => {
         const formularCotizarSeguro = document.querySelector(
@@ -372,24 +406,24 @@
         const closeModalConFoto = document.querySelector(
           ".closeModalCotizarSeguro"
         );
-
         const errorDeIncapacidadLabel =
           document.querySelector(".labelDeInputCheck");
         const errorModal_CotizarSeguro = document.querySelector(
           "#errorModal_CotizarSeguro"
         );
+        const equisModalArriba = document.querySelector(
+          ".CotizadorDeu_errorcitoModal_x"
+        );
+        const montoResultadoCotiza = document.querySelector(
+          ".resultadoCotizacion_containerCosto_total"
+        );
+        const tiempoDePagoResultadoCotiza = document.querySelector(
+          ".resultadoCotizacion_bgGray_anual"
+        );
 
-        valorActualDinero.addEventListener("input", function (e) {
-          const input = e.target;
-          let value = input.value.replace(/[^0-9]/g, ""); // Solo números
+        let hayErrores = [];
 
-          if (value) {
-            value = new Intl.NumberFormat("es-CO").format(value); // Formato colombiano
-            input.value = `$ ${value}`;
-          } else {
-            input.value = "";
-          }
-        });
+        /*******Ver si el input esta check*******/
 
         switchInput.addEventListener("change", () => {
           if (switchInput.checked) {
@@ -406,16 +440,18 @@
         formularCotizarSeguro.addEventListener("submit", (event) => {
           event.preventDefault();
 
+       
+          // Limpiar mensajes de error anteriores
           const existingErrorParagraph = document.querySelector(
             ".formCotizaSeguroVida_errorP"
           );
           if (existingErrorParagraph) {
             existingErrorParagraph.remove();
           }
-          let hayErrores = false;
 
+          // Verificar si el switch está activado
           if (!switchInput.checked) {
-            hayErrores = true;
+            hayErrores.push("El switch debe estar activado.");
             errorDeIncapacidadLabel.classList.add("textoRojoError");
             errorTitle.textContent = "Para poder continuar";
             errorMessage.textContent =
@@ -423,8 +459,20 @@
             errorModal.style.display = "flex";
           }
 
+          switchInput.addEventListener("change", () => {
+            if (switchInput.checked) {
+              const index = hayErrores.indexOf(
+                "El switch debe estar activado."
+              );
+
+              if (index !== -1) {
+                hayErrores.splice(index, 1);
+              }
+            }
+          });
+          // Verificar si el campo de valor actual está vacío
           if (!valorActualDinero.value.trim()) {
-            hayErrores = true;
+            hayErrores.push("Hay un campo vacío");
 
             const errorParagraph = document.createElement("p");
             errorParagraph.classList.add("formCotizaSeguroVida_errorP");
@@ -437,6 +485,14 @@
               "Por favor, completa todos los campos obligatorios para continuar.";
             errorModal.style.display = "flex";
             valorActualDinero.classList.add("borderRojoError");
+          } else {
+            // Encontrar el índice del mensaje de error específico
+            const index = hayErrores.indexOf("Hay un campo vacío");
+
+            // Si el mensaje existe en el array, eliminarlo
+            if (index !== -1) {
+              hayErrores.splice(index, 1);
+            }
           }
 
           valorActualDinero.addEventListener("input", () => {
@@ -456,56 +512,70 @@
             10
           );
 
-          if (isNaN(value) || value < 500000 ) {
+          if (isNaN(value) || value < 500000) {
             // Mostrar el modal si el valor es inválido o menor a 500000
             errorModal_CotizarSeguro.style.display = "block";
+            hayErrores.push("debe ser mayor a 5000000");
           } else {
-            // Aquí puedes manejar el envío del formulario si todo está correcto
-            document.querySelector('.resultadoCotizacion').style.display = 'none';
-            document.querySelector('.resultadoCotizacionInfo').style.display = 'block';
-            alert("Formulario enviado correctamente.");
+            // Encontrar el índice del mensaje de error específico
+            const index = hayErrores.indexOf("debe ser mayor a 5000000");
+
+           
+            // Si el mensaje existe en el array, eliminarlo
+            if (index !== -1) {
+              hayErrores.splice(index, 1);
+            }
           }
-        });
-
-        // Cerrar el modal al hacer clic en la 'x'
-        closeModalConFoto.addEventListener("click", () => {
-          errorModal_CotizarSeguro.style.display = "none";
-        });
-
-        // Cerrar el modal al hacer clic fuera del contenido
-        window.addEventListener("click", (event) => {
-          if (event.target === errorModal_CotizarSeguro) {
-            errorModal_CotizarSeguro.style.display = "none";
-          }
-
-          if (!hayErrores) {
-            alert("Formulario enviado correctamente.");
-            form.submit(); // Enviar solo si no hay errores
-          }
-
-          document
-            .querySelector(".closeModalCotizarSeguro")
-            .addEventListener("click", () => {
-              errorModal.style.display = "none";
-            });
-          document
-            .querySelector(".CotizadorDeu_errorcitoModal_x")
-            .addEventListener("click", () => {
-              errorModal.style.display = "none";
-            });
-
-          closeModal.addEventListener("click", () => {
-            errorModal_CotizarSeguro.style.display = "none";
-          });
-
-          window.addEventListener("click", (event) => {
+         
+       
+          errorModal_CotizarSeguro.addEventListener("click", (event) => {
             if (event.target === errorModal_CotizarSeguro) {
               errorModal_CotizarSeguro.style.display = "none";
-            }
+            } //cierra el de input numero
+
+            closeModalConFoto.addEventListener("click", () => {
+              errorModal_CotizarSeguro.style.display = "none"; //el del input
+            });
+
+            closeModalConFoto.addEventListener("click", (event) => {
+              if (event.target === errorModal_CotizarSeguro) {
+                errorModal_CotizarSeguro.style.display = "none"; //el del input
+              }
+            });
           });
+
+          equisModalArriba.addEventListener("click", () => {
+            errorModal.style.display = "none";
+          }); //cierra el modal de arriba
+
+          // Cerrar el modal de error al hacer clic en la 'x'
+          closeModalConFoto.addEventListener("click", () => {
+            errorModal_CotizarSeguro.style.display = "none"; // Solo cierra el modal de error
+          });
+
+          if(!validateForm()){
+                errorTitle.textContent = "Completa los campos faltantes";
+                errorMessage.textContent =
+                "Por favor, completa todos los campos obligatorios para continuar.";
+                errorModal.style.display = "flex";
+                return;
+          }
+
+          if (hayErrores.length === 0) {
+            alert("Formulario enviado correctamente.");
+
+            document.querySelector(
+              ".resultadoCotizacionInfoCoti"
+            ).style.display = "block";
+            document.querySelector(".resultadoCotizacionImg").style.display =
+              "none";
+
+            montoResultadoCotiza.textContent = "$ 900.000";
+            tiempoDePagoResultadoCotiza.textContent = "anual";
+          }
         });
       });
-      // Datos simulados (JSON)
+
       const data = [
         {
           motoSegurosDeudores: [
@@ -543,6 +613,15 @@
             { id: 5, description: "Barranquilla" },
           ],
         },
+        {
+          resultadoCotizacion: [
+            { name: "Monto", description: "Bogota D.C" },
+            { id: 2, description: "Tunja" },
+            { id: 3, description: "Médellin" },
+            { id: 4, description: "Cali" },
+            { id: 5, description: "Barranquilla" },
+          ],
+        },
       ];
 
       const motoSegurosDeudoresSelect = document.getElementById(
@@ -557,7 +636,9 @@
       const ubicacionGeograficaSegurosDeudores = document.getElementById(
         "ubicacionGeograficaSegurosDeudores"
       );
-      const form = document.getElementById("form");
+      const formularCotizarSeguro = document.querySelector(
+        "#formCotizaSeguroVida"
+      );
 
       // Función para cargar las opciones de motos en el combo box
       function loadMotos() {
@@ -603,28 +684,167 @@
         });
       }
 
+      function selectValidate(id, array, errorId) {
+        let idValue = document.getElementById(id).value;
+        let error = document.getElementById(errorId);
+
+        let isValid = array.some((selectValue) => idValue == selectValue.id);
+        if (isValid) {
+          error.style.display = "none";
+          return true;
+        } else {
+          error.style.display = "block";
+          return false;
+        }
+      }
+
+      const selectConfigs = [
+        {
+          id: "motoSegurosDeudores",
+          validValues: data[0].motoSegurosDeudores,
+          errorId: "motoSegurosDeudoresError",
+        },
+        {
+          id: "ocupacionSegurosDeudores",
+          validValues: data[1].ocupacionSegurosDeudores,
+          errorId: "ocupacionSegurosDeudoresError",
+        },
+        {
+          id: "tipoCreditoSegurosDeudores",
+          validValues: data[2].tipoCreditoSegurosDeudores,
+          errorId: "tipoCreditoSegurosDeudoresError",
+        },
+        {
+          id: "ubicacionGeograficaSegurosDeudores",
+          validValues: data[3].ubicacionGeograficaSegurosDeudores,
+          errorId: "ubicacionGeograficaSegurosDeudoresError",
+        },
+      ];
+
+      function validateForm() {
+        return validateAllSelects(selectConfigs);
+      }
+
+      function validateAllSelects(selectConfigs) {
+        let allValid = true;
+
+        selectConfigs.forEach(({ id, validValues, errorId }) => {
+          const isValid = selectValidate(id, validValues, errorId);
+          if (!isValid) {
+            allValid = false;
+          }
+        });
+
+        return allValid;
+      }
+
+      function setupSelectValidation(selectConfigs) {
+        selectConfigs.forEach(({ id, validValues, errorId }) => {
+          let selectElement = document.getElementById(id);
+          if (selectElement) {
+            selectElement.addEventListener("change", () => {
+              selectValidate(id, validValues, errorId);
+            });
+          }
+        });
+      }
+
+      // validacion de formulario de contactenos
+      document.getElementById("formNosComunicamos").addEventListener("submit", function(event) {
+      let valid = true; // Bandera de validación
+
+      // Limpiar errores previos
+      const errorMessages = document.querySelectorAll('.error-message-FormDeudores');
+      errorMessages.forEach(msg => msg.remove());
+
+      const inputs = document.querySelectorAll('.containerFormContact_form_input');
+      inputs.forEach(input => {
+        input.style.border = ''; // Limpiar borde rojo de los campos
+      });
+
+      // Validación de nombres y apellidos
+      const name = document.getElementById("nameNosComunicamos").value;
+      const nameInput = document.getElementById("nameNosComunicamos");
+      if (name.trim() === "" || name.length < 3) {
+        const errorMessage = document.createElement('span');
+        errorMessage.className = 'error-message-FormDeudores';  // Agregamos la clase de error
+        errorMessage.textContent = "Por favor, ingresa un nombre válido (al menos 3 caracteres).";
+        nameInput.parentElement.appendChild(errorMessage);
+        nameInput.style.border = '2px solid red';
+        errorMessage.style.display = 'block'; // Mostramos el mensaje de error
+        valid = false;
+      }
+
+      // Validación de correo electrónico
+      const email = document.getElementById("emailNosComunicamos").value;
+      const emailInput = document.getElementById("emailNosComunicamos");
+      const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!regexEmail.test(email)) {
+        const errorMessage = document.createElement('span');
+        errorMessage.className = 'error-message-FormDeudores';  // Agregamos la clase de error
+        errorMessage.textContent = "Por favor, ingresa un correo electrónico válido.";
+        emailInput.parentElement.appendChild(errorMessage);
+        emailInput.style.border = '2px solid red';
+        errorMessage.style.display = 'block'; // Mostramos el mensaje de error
+        valid = false;
+      }
+
+      // Validación de teléfono
+      const telefono = document.getElementById("telefonoNosComunicamos").value;
+      const telefonoInput = document.getElementById("telefonoNosComunicamos");
+      if (telefono.trim() === "" || telefono.length < 7) {
+        const errorMessage = document.createElement('span');
+        errorMessage.className = 'error-message-FormDeudores';  // Agregamos la clase de error
+        errorMessage.textContent = "El número de celular debe tener al menos 7 dígitos.";
+        telefonoInput.parentElement.appendChild(errorMessage);
+        telefonoInput.style.border = '2px solid red';
+        errorMessage.style.display = 'block'; // Mostramos el mensaje de error
+        valid = false;
+      }
+
+      // Validación del checkbox de aceptación
+      const aceptarPoliticas = document.getElementById("acceptarPoliticasNosComunicamos").checked;
+      const aceptarPoliticasInput = document.getElementById("acceptarPoliticasNosComunicamos");
+      if (!aceptarPoliticas) {
+        const errorMessage = document.createElement('span');
+        errorMessage.className = 'error-message-FormDeudores';  // Agregamos la clase de error
+        errorMessage.textContent = "Debes aceptar la política de privacidad.";
+        aceptarPoliticasInput.parentElement.appendChild(errorMessage);
+        errorMessage.style.display = 'block'; // Mostramos el mensaje de error
+        valid = false;
+      }
+
+      // Si alguna validación falla, evitar que el formulario se envíe
+      if (!valid) {
+        event.preventDefault(); // Evita el envío del formulario
+      }
+      });
+
+      // Event listeners para eliminar el error cuando se escribe en el campo
+      const inputs = document.querySelectorAll('.containerFormContact_form_input');
+      inputs.forEach(input => {
+      input.addEventListener('input', function() {
+        // Eliminar mensaje de error y borde rojo si el campo es corregido
+        if (input.value.trim() !== "" && input.value.length >= 3) {
+          const errorMessage = input.parentElement.querySelector('.error-message-FormDeudores');
+          if (errorMessage) {
+            errorMessage.remove(); // Eliminar el mensaje de error
+          }
+          input.style.border = ''; // Restablecer el borde
+        }
+      });
+      });
+
+
+
+     
+
+      setupSelectValidation(selectConfigs);
       // Cargar las opciones al iniciar la página
       loadMotos();
       loadOcupaciones();
       loadTipoCredito();
       loadUbicacionGeografica();
-      document.querySelector('.resultadoCotizacionInfo').style.display = 'none';
-
-      // Validación del formulario
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const moto = motoSegurosDeudoresSelect.value;
-        const ocupacion = ocupacionSegurosDeudoresSelect.value;
-
-        // Validamos que ambos campos estén seleccionados
-        if (!moto || !ocupacion) {
-          document.getElementById("error-message").textContent =
-            "Por favor, selecciona ambos campos. 000";
-        } else {
-          document.getElementById("error-message").textContent = ""; // Limpiamos el mensaje de error
-          alert("Formulario enviado correctamente");
-        }
-      });
     </script>
   </body>
 </html>
